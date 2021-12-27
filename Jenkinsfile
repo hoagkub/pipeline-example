@@ -1,7 +1,7 @@
 #!groovy
 pipeline {
     agent {
-        dockersfile true
+        dockerfile true
     }
     stages {
         stage ('Example') {
