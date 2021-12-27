@@ -1,6 +1,8 @@
 #!groovy
 pipeline {
-    agent any
+    agent {
+        dockersfile true
+    }
     stages {
         stage ('Example') {
             steps {
